@@ -1,0 +1,13 @@
+/* navbar.module.css */
+.title {
+    flex-grow: 1;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: left; /*
+}
+
+
+
+.menuButton {
+    margin-right: 8px; /* Spacing between menu icon and title */
+}

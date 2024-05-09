@@ -1,0 +1,24 @@
+/* projectForm.module.css */
+.formContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 90px;
+    flex-grow: 0.5;
+    gap: 20px;
+    width: 80%;
+}
+
+.inputField, .addButton, .submitButton {
+    width: 100%;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emailInput {
+    flex-grow: 1;
+}

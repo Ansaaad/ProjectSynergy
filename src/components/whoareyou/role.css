@@ -1,0 +1,94 @@
+/* .container1{
+    height: 748px;
+    width:1180;
+    display: grid;
+    background-color: pink;
+    grid-template-rows:414px 130px 155px 20px ;
+    grid-template-columns:320px 198px 153px 50px ;
+    gap:9px;
+
+  }
+  .item{
+    background-color:#F0F1EC ;
+  }
+  .red{
+    background-color:#E72F24;
+  }
+  .yellow{
+    background-color: yellow;
+    grid-area:4/2/5/3 ;
+  }
+  .blue{
+    background-color: blue;
+    border-bottom: 10px solid #000;
+  }
+
+.black{
+background-color: black;
+}
+.white1{
+background-color:#F0F1EC ;
+grid-area: 1/2/2/-1;
+}
+.white2{
+background-color:#F0F1EC ;
+grid-area: 2/1/4/2;
+}
+.white3{
+background-color:#F0F1EC ;
+grid-area: 2/2/4/4;
+}
+.white4{
+background-color:#F0F1EC ;
+grid-area: 3/4/-1/-1;
+}
+.white5{
+background-color:pink;
+grid-area: 4/1/-1/2;
+}
+.container {
+    display: flex;
+    height: 100vh; /* 100% of the viewport height */
+  /* }
+  
+  .left-section {
+    flex: 40%; /* 40% width */
+    /* background-color: #f0f0f0; Example background color */
+  /* } */
+  
+  /* .right-section {
+    flex: 50%; /* 50% width */
+    /* background-color: #ccc; Example background color */
+  /* } */ 
+  /* styles.css */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr; /* Three columns, middle one taking 40% */
+  grid-template-rows: repeat(3, 1fr); /* Three rows with equal height */
+  height: 100vh; /* Full viewport height */
+}
+
+.item {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* Different background colors for each section */
+.section1 {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+.section2 {
+  background-color: #ffee58; /* Yellow */
+  grid-column: 2 / span 1; 
+  grid-row: 1 / span 3;
+}
+
+.section3 {
+  background-color: #80cbc4; /* Green */
+}
+
+.section4 {
+  background-color: #ef9a9a; /* Pink */
+}

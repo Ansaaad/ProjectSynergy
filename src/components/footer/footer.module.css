@@ -1,0 +1,84 @@
+.footer {
+    background-color: #323232;
+    color: #E5E5E5;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .contactSection {
+    text-align: left;
+  }
+
+  .contactSection h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+  }
+  
+  .socialMediaSection h4 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .logoContainer{
+    text-align: center;
+  }
+  .logoContainer img{
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .iconLink {
+    background: transparent;
+    color: #E5E5E5;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .iconLink:hover {
+    background-color: #4b8bec;
+    transform: scale(1.1);
+  }
+  
+  .iconLink svg {
+    font-size: 24px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contactSection, .socialMediaSection {
+      margin: 10px 0; 
+    }
+  
+    .icons {
+      justify-content: center;
+    }
+  }

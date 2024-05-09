@@ -9,7 +9,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import { Link } from 'react-router-dom';
 import styles from './sidebar.module.css';
 
-function Sidebar({ open, setOpen }) {
+function TeacherSidebar({ open, setOpen }) {
     const handleDrawerClose = () => {
         setOpen(false); // Close the drawer
     };
@@ -47,4 +47,4 @@ function Sidebar({ open, setOpen }) {
     );
 }
 
-export default Sidebar;
+export default TeacherSidebar;

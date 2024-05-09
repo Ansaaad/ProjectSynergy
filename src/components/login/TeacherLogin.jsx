@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { TextField, Button, Typography } from '@mui/material';
 import styles from './login.module.css';
 
-function Login() {
+function TeacherLogin() {
     let navigate = useNavigate();  // Hook to navigate to different routes
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        navigate('/LandingPage');  // Navigate to the Dashboard page upon form submission
+        navigate('/Teacher');  // Navigate to the Dashboard page upon form submission
     };
 
     return (
@@ -39,11 +39,11 @@ function Login() {
                     color="primary"
                     className={styles.submitButton}
                 >
-                    Login As Student
+                    Login As Teacher
                 </Button>
             </form>
         </div>
     );
 }
 
-export default Login;
+export default TeacherLogin;

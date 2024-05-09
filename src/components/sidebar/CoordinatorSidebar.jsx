@@ -9,7 +9,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import { Link } from 'react-router-dom';
 import styles from './sidebar.module.css';
 
-function Sidebar({ open, setOpen }) {
+function CoordinatorSidebar({ open, setOpen }) {
     const handleDrawerClose = () => {
         setOpen(false); // Close the drawer
     };
@@ -26,7 +26,7 @@ function Sidebar({ open, setOpen }) {
                     <ListItemIcon><SchoolIcon /></ListItemIcon>
                     <ListItemText primary="NEC-PM" />
                 </ListItem>
-                <ListItem button component={Link} to="/LandingPage" style={{marginTop:"50px"}}>
+                <ListItem button component={Link} to="/Teacher" style={{marginTop:"50px"}}>
                     <ListItemIcon><DashboardIcon /></ListItemIcon>
                     <ListItemText primary="Dashboard" />
                 </ListItem>
@@ -36,15 +36,15 @@ function Sidebar({ open, setOpen }) {
                 </ListItem>
                 <ListItem button component={Link} to="/projects">
                     <ListItemIcon><CloudUploadIcon /></ListItemIcon>
-                    <ListItemText primary="Upload Project Details" />
+                    <ListItemText primary="Notify Students" />
                 </ListItem>
                 <ListItem button component={Link} to="/my-projects">
                     <ListItemIcon><FolderIcon /></ListItemIcon>
-                    <ListItemText primary="My Projects" />
+                    <ListItemText primary="Notify Teachers" />
                 </ListItem>
             </List>
         </Drawer>
     );
 }
 
-export default Sidebar;
+export default CoordinatorSidebar;
